@@ -7,6 +7,7 @@ Implementation of the most popular algorithms and data structures in Python.
 -   [Sorting](algorithms/sorting/)
     -   [Insertion sort](algorithms/sorting/insertion_sort/insertion_sort.py)
     -   [Quicksort](algorithms/sorting/quicksort/quicksort.py)
+    -   [Merge sort](algorithms/sorting/merge_sort/merge_sort.py)
 
 ## Data structures:
 
