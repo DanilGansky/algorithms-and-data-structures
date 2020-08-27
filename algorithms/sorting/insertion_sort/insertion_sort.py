@@ -18,11 +18,10 @@ Sources: 1. https://www.coursehero.com/file/p4mf0v/Insertion-Sort-Pros-and-Cons-
          2. https://nbviewer.jupyter.org/github/donnemartin/interactive-coding-challenges/blob/master/sorting_searching/insertion_sort/insertion_sort_solution.ipynb
 """
 
-from typing import Iterable, Optional
+from typing import Iterable
 
 
-def insertion_sort(iterable: Iterable[int],
-                   reverse=False) -> Optional[Iterable[int]]:
+def insertion_sort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     iterable = list(iterable)
 
     if reverse:

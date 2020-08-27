@@ -15,11 +15,10 @@ Sources: 1. https://nbviewer.jupyter.org/github/donnemartin/interactive-coding-c
          2. http://z-sword.blogspot.com/2014/02/advantages-and-disadvantages-of-sorting.html
 """
 
-from typing import Iterable, Optional
+from typing import Iterable
 
 
-def quicksort(iterable: Iterable[int],
-              reverse=False) -> Optional[Iterable[int]]:
+def quicksort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     if len(iterable) < 2:
         return iterable
 
