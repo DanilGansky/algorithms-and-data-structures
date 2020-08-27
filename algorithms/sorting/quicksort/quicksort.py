@@ -26,19 +26,18 @@ def quicksort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     left, middle, right = [], [], []
     pivot = iterable[len(iterable) // 2]
 
+    def _compare(x, y, reverse):
+        if reverse:
+            return x > y
+        return x < y
+
     for item in iterable:
         if item == pivot:
             middle.append(item)
-        elif item < pivot:
-            if reverse:
-                right.append(item)
-            else:
-                left.append(item)
-        elif item > pivot:
-            if reverse:
-                left.append(item)
-            else:
-                right.append(item)
+        elif _compare(item, pivot, reverse):
+            left.append(item)
+        else:
+            right.append(item)
 
     left = quicksort(left, reverse=reverse)
     right = quicksort(right, reverse=reverse)
