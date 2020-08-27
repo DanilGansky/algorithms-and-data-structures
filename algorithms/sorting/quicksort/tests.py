@@ -4,7 +4,7 @@ import random
 from quicksort import quicksort
 
 
-class TestQuicksortSort(unittest.TestCase):
+class TestQuicksort(unittest.TestCase):
     def test_quicksort(self):
         random_list = [random.randint(-10, 10) for _ in range(10)]
 
@@ -28,7 +28,7 @@ class TestQuicksortSort(unittest.TestCase):
 
 
 def main():
-    test = TestQuicksortSort()
+    test = TestQuicksort()
     test.test_quicksort()
 
 
