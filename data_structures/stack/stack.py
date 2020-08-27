@@ -25,13 +25,13 @@ class Stack:
             yield current
             current = current.next
 
-    def find(self, data: Any) -> Optional[Node]:
+    def find(self, data: Any) -> Node:
         current = self._head
         while current is not None:
             if current.data == data:
                 return current
             current = current.next
-        return None
+        raise ValueError(f'"{data}" not in list')
 
     @data_validator
     def push(self, data: Any) -> None:

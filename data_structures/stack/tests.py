@@ -33,7 +33,7 @@ class TestStack(unittest.TestCase):
 
         print('Test: find')
         self.assertEqual(self.stack.find(7).data, 7)
-        self.assertEqual(self.stack.find(9), None)
+        self.assertRaises(ValueError, self.stack.find, 9)
 
         print('Test: is_empty')
         self.assertEqual(self.stack.is_empty(), False)
