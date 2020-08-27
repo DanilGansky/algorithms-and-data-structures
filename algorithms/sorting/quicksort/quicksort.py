@@ -2,10 +2,11 @@
 Pros:
 1. The quick sort is regarded as the best sorting algorithm
 2. It is able to deal well with a huge list of items
-3. Because it sorts in place, no additional storage is required as well
 
 Cons:
 1. Not stable
+2. More sophisticated implementations are in-place, although
+   they still take up recursion depth space
 
 Complexity:
     Time: O(n log(n)) average, best, O(n^2) worst
