@@ -58,7 +58,7 @@ class SinglyLinkedList:
             last_node = self.last()
             last_node.next = new_node
 
-    def find(self, data: Any) -> Optional[Node]:
+    def find(self, data: Any) -> Node:
         current = self._head
         while current is not None:
             if (current.data == data or

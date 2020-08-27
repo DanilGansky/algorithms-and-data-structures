@@ -62,7 +62,7 @@ class DoublyLinkedList:
             self._last.next = new_node
         self._last = new_node
 
-    def find(self, data: Any) -> Optional[DoubleNode]:
+    def find(self, data: Any) -> DoubleNode:
         current = self._head
         while current is not None:
             if (current.data == data or
