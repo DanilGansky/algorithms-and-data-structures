@@ -34,5 +34,7 @@ def insertion_sort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     for i in range(1, len(iterable)):
         for j in range(i):
             if _compare(iterable[i], iterable[j]):
-                iterable[i], iterable[j] = iterable[j], iterable[i]
+                temp = iterable[i]
+                iterable[j+1:i+1] = iterable[j:i]
+                iterable[j] = temp
     return iterable
