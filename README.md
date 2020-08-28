@@ -9,7 +9,7 @@ Implementation of the most popular algorithms and data structures in Python.
     -   [Quicksort](algorithms/sorting/quicksort/quicksort.py)
     -   [Merge sort](algorithms/sorting/merge_sort/merge_sort.py)
     -   [Selection sort](algorithms/sorting/selection_sort/selection_sort.py)
-    -   [Radix sort](algorithms/sorting/radix_sort/radix_sort.py)
+    -   [Radix sort](algorithms/sorting/radix_sort/radix_sort.py) (Only for positive numbers)
 
 ## Data structures:
 
@@ -17,3 +17,4 @@ Implementation of the most popular algorithms and data structures in Python.
     -   [SinglyLinkedList](data_structures/linked_lists/singly_linked_list/singly_linked_list.py)
     -   [DoublyLinkedList](data_structures/linked_lists/doubly_linked_list/doubly_linked_list.py)
 -   [Stack](data_structures/stack/stack.py)
+-   [Queue](data_structures/queue/queue.py)
