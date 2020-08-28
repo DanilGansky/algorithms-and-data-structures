@@ -18,3 +18,11 @@ Implementation of the most popular algorithms and data structures in Python.
     -   [DoublyLinkedList](data_structures/linked_lists/doubly_linked_list/doubly_linked_list.py)
 -   [Stack](data_structures/stack/stack.py)
 -   [Queue](data_structures/queue/queue.py)
+
+## Tests
+
+For running all tests write down:
+
+```bash
+$ python -m unittest discover -s ./ -p 'tests.py'
+```
