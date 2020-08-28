@@ -8,7 +8,7 @@ Cons:
 Sources: https://www.codingame.com/playgrounds/6525/stack-data-structure
 """
 
-from typing import Any, Iterator, Optional
+from typing import Any, Iterator
 
 from data_structures.base import Node, data_validator
 
