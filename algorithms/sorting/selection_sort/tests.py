@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from selection_sort import selection_sort
+from algorithms.sorting import selection_sort
 
 
 class TestSelectionSort(unittest.TestCase):

@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from radix_sort import radix_sort
+from algorithms.sorting import radix_sort
 
 
 class TestRadixSort(unittest.TestCase):

@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from insertion_sort import insertion_sort
+from algorithms.sorting import insertion_sort
 
 
 class TestInsertionSort(unittest.TestCase):
