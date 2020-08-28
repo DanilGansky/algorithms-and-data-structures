@@ -9,7 +9,8 @@ class TestSelectionSort(unittest.TestCase):
         random_list = [random.randint(-10, 10) for _ in range(10)]
 
         print('None input')
-        self.assertRaises(TypeError, selection_sort, None)
+        self.assertRaises(ValueError, selection_sort, None)
+        self.assertRaises(ValueError, selection_sort, [], None)
 
         print('Empty input')
         self.assertEqual(selection_sort([]), [])

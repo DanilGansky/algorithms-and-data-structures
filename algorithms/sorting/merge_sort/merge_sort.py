@@ -18,7 +18,10 @@ Sources: https://www.quora.com/What-are-the-pros-and-cons-of-merge-sort
 
 from typing import Iterable
 
+from algorithms.sorting.base import args_validator
 
+
+@args_validator
 def merge_sort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     return _partitioning(iterable, reverse)
 

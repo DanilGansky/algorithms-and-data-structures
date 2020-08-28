@@ -18,7 +18,10 @@ Sources: 1. https://nbviewer.jupyter.org/github/donnemartin/interactive-coding-c
 
 from typing import Iterable
 
+from algorithms.sorting.base import args_validator
 
+
+@args_validator
 def quicksort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     if len(iterable) < 2:
         return iterable

@@ -9,7 +9,8 @@ class TestMergeSort(unittest.TestCase):
         random_list = [random.randint(-10, 10) for _ in range(10)]
 
         print('None input')
-        self.assertRaises(TypeError, merge_sort, None)
+        self.assertRaises(ValueError, merge_sort, None)
+        self.assertRaises(ValueError, merge_sort, [], None)
 
         print('Empty input')
         self.assertEqual(merge_sort([]), [])

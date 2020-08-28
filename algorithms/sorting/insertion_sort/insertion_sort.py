@@ -20,7 +20,10 @@ Sources: 1. https://www.coursehero.com/file/p4mf0v/Insertion-Sort-Pros-and-Cons-
 
 from typing import Iterable
 
+from algorithms.sorting.base import args_validator
 
+
+@args_validator
 def insertion_sort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     iterable = list(iterable)
 

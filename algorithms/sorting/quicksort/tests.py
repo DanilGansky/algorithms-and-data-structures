@@ -9,7 +9,8 @@ class TestQuicksort(unittest.TestCase):
         random_list = [random.randint(-10, 10) for _ in range(10)]
 
         print('None input')
-        self.assertRaises(TypeError, quicksort, None)
+        self.assertRaises(ValueError, quicksort, None)
+        self.assertRaises(ValueError, quicksort, [], None)
 
         print('Empty input')
         self.assertEqual(quicksort([]), [])

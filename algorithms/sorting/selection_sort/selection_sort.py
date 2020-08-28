@@ -17,7 +17,10 @@ Sources: http://www.icodeguru.com/cpp/SortingAlgorithms/selection.html
 
 from typing import Iterable
 
+from algorithms.sorting.base import args_validator
 
+
+@args_validator
 def selection_sort(iterable: Iterable[int], reverse=False) -> Iterable[int]:
     iterable = list(iterable)
     find_min_or_max = max if reverse else min
