@@ -3,7 +3,7 @@ from typing import Any, Optional, Type
 
 class Node:
     """
-    Node implementation for Stack, SinglyLinkedList
+    Node implementation for Stack, SinglyLinkedList, Queue
     """
 
     def __init__(self, data: Any, next_node: Optional[Type['Node']]) -> None:
