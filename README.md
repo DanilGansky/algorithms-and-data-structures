@@ -26,3 +26,21 @@ For running all tests write down:
 ```bash
 $ python -m unittest discover -s ./ -p 'tests.py'
 ```
+
+For running specific tests:
+
+```bash
+$ python -m unittest <module>.<data_structure_or_algorithm>_tests
+```
+
+Ex: stack
+
+```bash
+$ python -m unittest data_structures.stack_tests
+```
+
+Ex: quicksort
+
+```bash
+$ python -m unittest algorithms.quicksort_tests
+```
