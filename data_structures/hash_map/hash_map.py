@@ -9,7 +9,7 @@ Complexity:
 Sources: https://en.wikipedia.org/wiki/Hash_table
 """
 
-from typing import Any, Iterable, Union
+from typing import Any, Iterable, List, Union
 
 
 class HashMapItem:
@@ -65,7 +65,7 @@ class HashMap:
 
             if _hash == _initial_hash:
                 raise NotEnoughCells(
-                    f'There is no place for this item: {self._table[_hash]}')
+                    f'There is no place for this item: ({key}: {value})')
         self._table[_hash] = HashMapItem(key, value)
 
     def __delitem__(self, key: Union[str, int]) -> None:
@@ -94,6 +94,21 @@ class HashMap:
             return False
         else:
             return True
+
+    def expand(self, new_size: int) -> None:
+        if new_size <= self._size:
+            raise ValueError(
+                '"new_size" must be greater than the current size')
+
+        old_table = self._table[:]
+        self._size = new_size
+        self._table = [None] * self._size
+        self._transfer(old_table)
+
+    def _transfer(self,
+                  old_table: List[Union[HashMapItem, None, int]]) -> None:
+        for item in old_table:
+            self[item.key] = item.value
 
     def __repr__(self) -> str:
         return f'<HashMap: {[str(_) for _ in self]}>'

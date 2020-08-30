@@ -88,6 +88,25 @@ class TestHashMap(unittest.TestCase):
         self.assertEqual(0 in hash_map, False)
         print('Success: test_contains')
 
+    def test_expand(self):
+        print('Test: test_expand')
+        hash_map = HashMap(2)
+
+        print('Test: incorrect input')
+        hash_map[0] = 'foo'
+        hash_map[1] = 'bar'
+        self.assertRaises(NotEnoughCells, hash_map.__setitem__, 2, 'hello')
+        self.assertRaises(ValueError, hash_map.expand, 1)
+
+        print('Test: general case')
+        hash_map.expand(5)
+        hash_map[2] = 'hello'
+        self.assertEqual(len(hash_map._table), 5)
+        self.assertEqual(hash_map[0], 'foo')
+        self.assertEqual(hash_map[1], 'bar')
+        self.assertEqual(hash_map[2], 'hello')
+        print('Success: test_expand')
+
 
 def main():
     test = TestHashMap()
@@ -95,6 +114,7 @@ def main():
     test.test_setitem()
     test.test_delitem()
     test.test_contains()
+    test.test_expand()
 
 
 if __name__ == "__main__":
