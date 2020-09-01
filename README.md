@@ -10,6 +10,8 @@ Implementation of the most popular algorithms and data structures in Python.
     -   [Merge sort](algorithms/sorting/merge_sort/merge_sort.py)
     -   [Selection sort](algorithms/sorting/selection_sort/selection_sort.py)
     -   [Radix sort](algorithms/sorting/radix_sort/radix_sort.py) (Only for positive numbers)
+-   [Graph algorithms](algorithms/graph/)
+    -   [Dijkstra's algorithm](algorithms/graph/dijkstra/dijkstra.py)
 
 ## Data structures:
 
@@ -19,6 +21,7 @@ Implementation of the most popular algorithms and data structures in Python.
 -   [Stack](data_structures/stack/stack.py)
 -   [Queue](data_structures/queue/queue.py)
 -   [HashMap](data_structures/hash_map/hash_map.py)
+-   [Graph](data_structures/graph/graph.py)
 
 ## Tests
 
