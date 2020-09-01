@@ -7,7 +7,7 @@ Cons:
 
 from typing import Any, Iterable
 
-from data_structures.base import data_validator, Node
+from data_structures.base import Node, data_validator
 
 
 class Queue:

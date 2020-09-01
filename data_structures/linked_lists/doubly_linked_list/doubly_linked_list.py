@@ -14,7 +14,7 @@ Sources: https://stackoverflow.com/a/12387760
 
 from typing import Any, Iterator, Optional
 
-from data_structures.base import data_validator, DoubleNode
+from data_structures.base import DoubleNode, data_validator
 
 
 class DoublyLinkedList:
