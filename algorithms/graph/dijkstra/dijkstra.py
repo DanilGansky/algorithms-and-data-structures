@@ -1,3 +1,10 @@
+"""
+Dijkstra's algorithm
+Complexity:
+    Time: O(v^2), where v is the number of vertices
+    Space: O(v^2)
+"""
+
 from typing import Dict, List, Optional, Tuple, Union
 
 from data_structures.graph import Graph, Node
